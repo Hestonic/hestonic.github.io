@@ -1,4 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arimo', sans-serif;
 
+}
 h1,
 h2,
 h3,
@@ -8,119 +13,159 @@ h6 {
     font-size:100%;
     font-weight:normal;
     margin: 0;
+    
 }
-h3{
-	text-align: center;
-}
-body{
-	font-family: 'Arimo', sans-serif;
-	background: #525659;
-}
-.dividing-line{
-	height: 4px;
-	width: 90%;
-	background: #fff;
-	margin: auto;
-}
-.main-wrap{
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	background: linear-gradient(45deg, #94d2ee, #C5DDE8);
-}
-.headings-wrap, 
-.brend, 
-.special, 
-.cycle, 
-.command, 
-.uniqueness, 
-.contacts-wrap,
-.contacts{
-	padding: 75px;
-	/*margin: 40px 0 40px 0;*/
-}
-.contacts-wrap{
-	padding: 150px;
-}
-
-.headings-wrap{
-	padding: 0 0 500px 100px;
-	background-image: url(img/wool.png);
+/*.kneet-bg{
+	width: 1920px;
+	background-image: url(img/kneet-bg.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	margin: 0;
 }
+.main-wrap .kneet{
+	margin-top: 500px;
+	z-index: 1;
+}
+.kneet-bg{
+	margin-top: -2800px;
+}*/
 
-.headings-wrap h1{
-	margin: 0 0 0 0;
-	padding: 300px 0 0 0;
-	font-size: 100pt;
-	color:  rgba(1, 176, 241, 0.95);
-	text-shadow: 1px 2px 1px rgba(0,0,0,0.4), 0 0 1pt  rgba(0,0,0,0.3);
-	text-transform: uppercase;
-}
-.headings-wrap h2{
-	margin: -10px 0 0 0;
-	font-size: 25pt;
-	color: #606060;
-	text-shadow: 0px 1px 0px rgba(0,0,0,0.4), 0 0 1pt black;
-	text-transform: uppercase;
 
+/*                                       */
+
+header{
+	display: flex;
+	padding: 20px 0 0 0;
+	align-items: center;
+	justify-content: space-between;
 }
-h3{
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 0 40px;
+}
+.logo img{
+	width: 60px;
+	height: 60px;
+}
+.logo h3{
+	color: #000;
+	font-size: 30pt;
+	padding: 0 0 0 10px;
+}
+.nubmer{
 	font-size: 25pt;
-	color:  rgba(1, 176, 241, 1);
+	font-weight: 600;
 }
-p{
-	font-size: 20pt;
-	color: #606060;
-	text-shadow: 0px 1px 0px rgba(0,0,0,0.4), 0 0 1pt black;
+.time{
+	font-size: 15pt;
+	margin-left: 5px;
+	margin-bottom: -5px;
+}
+.tel{
+	padding: 0px 60px 0 0;
+}
+.tel div{
+	display: flex;
+	align-items: flex-end;
+}
+/*                                        */ 
+
+.headings{
+	margin: 0 0 100px 0;	
+	z-index: 9;
+}
+.headings-wrap{
+	height: 1020px;
+	background-image: url(img/bg-wool.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0;
+	z-index: 10;
+}
+main h1{
+	color: #04aee6;
+	text-transform: uppercase;
+	font-size: 125pt;
+	padding: 225px 0 0 135px;
+}
+main h2{
+	color: #000;
+	font-size: 35pt;
+	padding: 0 0 0 145px;
+}
+.headings-wrap a{
+	text-decoration: none;
+	color: white;
+}
+.input-call{
+	padding: 40px 0 0 150px;
+	height: 80px;
+	width: 360px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px rgba(0,0,0, 0.4);
+	background-image: linear-gradient(to bottom, #07ace6, #377cee);
+	border: 0;
+	margin-top: 40px;
+	margin-left: 150px;
+	font-size: 25pt;
+}
+
+/*                  */
+
+.brend-wrap{
+	height: 1000px;
+	background-image: url(img/second-bg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0;
+	z-index: 10;
 }
 .brend{
 	display: flex;
-
+	text-align: center;
+	z-index: 11;
 }
-.brend div{
-	margin: auto;
-	padding: 0 0 50px 65px;
-}
-.brend h3{
-	text-transform: uppercase;
-	margin: 0 0 50px 0;
-}
-.brend div p{
-	margin: 25px 0 0 0 ;
-}
-.brend span{
-	border-bottom: 1px solid  rgba(0,0,0,0.4);
-
-}
-.jumperCut{
-	height: 764px;
-	width: 565px;
-}
-
-.special{
+.brend-img{
+	padding: 80px 0 0 140px;
+} 
+.class{
 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-basis: 50%;
 }
-.special-pic{
-	margin: auto;
+.class h3{
+	background: #fff;
+	color: #04aee6;
+	font-size: 40pt;
+	font-weight: bolder;
+	padding: 20px 35px 20px 35px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px rgba(0,0,0, 0.4);
 }
-.special-pic h3{
-	margin: /*150px*/0px 0 50px 0;
+.class-h{
+	padding-top: 100px;
 }
-.special-pic h3, .cycle h3, .command h3{
-	font-size: 32pt
+.special h4{
+	font-size: 30pt;
+	font-weight: 500;
+	color: #000;
 }
-.cloth{
-	height: 764px;
-	width: 565px;
+.point img{
+	width: 80px;
+	height: 80px;
 }
-.cloth1{
-	height: 200px;/*100X100*/
-	width: 200px;
+.p-group{
+	margin-top: 40px;
 }
 .point-box{
 	display: flex;
@@ -130,76 +175,123 @@ p{
 }
 .point{
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0 10px 0 10px;
+	margin: 0 20px 0 20px;
+}
+.special{
+	padding-bottom: 200px;
+	margin-top: 100px;
 }
 .point p{
-	color: rgba(0, 0, 0, 1);
-	font-size: 15pt;
-	margin: 20px 0 0 0;
-	text-shadow: 0 0 0;
+	margin-left: 10px; 
+	font-size: 14pt;
 }
 
+/*                       */
 
-.command h3, .cycle h3, .uniqueness h3{
-	margin-bottom: 25px;
-}
-.command .line, .cycle .line{
-	height: 4px;
-	width: 75px;
-	background: rgba(0,0,0,0.5);
-	margin: auto;
-}
-.command p, .uniqueness p, .cycle p{
-	font-size: 15pt;
-	text-align: center;
 
-}
-
-.uniqueness .line{
-	height: 4px;
-	width: 150px;
-	background: rgba(0,0,0,0.5);
-	margin: auto;
-}
-.p{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 100%;
-}
-.right{
-	z-index: 1;
-	margin-right: 500px;
-}
-.p p{
-	margin-top: -200px;
-	z-index: 1;
-	margin-left: 350px;
-}
-.p .up{
-	text-transform: uppercase;
-	font-size: 20pt;
-}
-.p .usual{
-	text-shadow: 0 0 0;
-}
-.uniqueness-bg{
-	padding: 0 0 750px 20px;
-	background-image: url(img/client.png);
+.cost-bg{
+	height: 600px;
+	width: 920px;
+	background-image: url(img/cost-bg.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	margin: 0;
-	z-index: 0;
+}
+.cycle-bg{
+	height: 600px;
+	width: 920px;
+	background-image: url(img/cycle-bg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0;
+}
+.cycle, .cost{
+	margin: 20px 0 0 0;
+}
+.cycle-cost{
+	display: flex;
+	justify-content: space-between;
+	/*flex-wrap: wrap;*/
+}
+.cycle-h h3, .cost-h h3{
+	background: #fff;
+	color: #04aee6;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bolder;
+	padding: 20px 35px 20px 35px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px rgba(0,0,0, 0.4);
+}
+.cycle-h, .cost-h{
+	padding-top: 40px;
+	width: 600px;
+	height: 85px;
+	margin: auto;
+}
+.cycle p, .cost p{
+	text-align: center;
+	font-weight: bold;
+	width: 800px;
+	margin: auto;
+	font-size: 16pt;
+}
+.cycle img{
+	margin: 40px 0 0 40px;
+}
+.line{
+	width: 180px;
+	height: 4px;
+	margin: 20px auto;
+	background: #000;
 }
 
+
+/*             */
+
+
+.command{
+	height: 1020px;
+	background-image: url(img/command-bg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 40px;
+}
+.command p{
+	text-align: center;
+	font-weight: bold;
+	width: 800px;
+	margin: auto;
+	font-size: 16pt;
+}
+.command h3{
+	background: #fff;
+	color: #04aee6;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bolder;
+	padding: 20px 35px 20px 35px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px rgba(0,0,0, 0.4);
+}
+.command-h{
+	padding-top: 40px;
+	width: 600px;
+	height: 85px;
+	margin: auto;
+}
 .char-box{
 	margin-top: 100px;
 	display: flex;
+	padding: 0 250px;
 }
 .cbtop{
 	flex-basis: 50%;
@@ -212,6 +304,7 @@ p{
 	width: 75%;
 	text-shadow: 0 0 0;
 	padding: 0 0 45px 45px;
+	font-weight: 400;
 }
 .char div{
 	height: 75px;
@@ -222,9 +315,6 @@ p{
 	border-radius: 15px;
 	display: flex;
 	margin: 0;
-}
-.char .grey{
-	background-color: #969696;
 }
 .char img{
 	max-width: 50%;
@@ -238,64 +328,274 @@ p{
 	margin: 0 0 0 40px;
 }
 
-.cycle p{
-	margin-left: 100px;
-	margin-right: 100px;
-}
-.cycle-bg{
-	padding: 0 0 500px 20px;
-	background-image: url(img/cycle.png);
+
+/*                        */
+
+
+.contacts{
+	height: 1020px;
+	background-image: url(img/contacts-bg.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	margin: 0;
+	margin-top: 40px;
 }
-/*.cycle-bg p{
-	margin-top: 20px;
+.contacts p{
+	text-align: right;
+	font-weight: bold;
+	margin: auto;
+	font-size: 14pt;
+	width: 180px;
+	height: 100px;	
 }
-.command p{
-	margin-top: 20px;
+.contacts h3{
+	background: #fff;
+	color: #04aee6;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 35px 15px 35px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px rgba(0,0,0, 0.4);
 }
-.uniqueness p{
-	margin-top: 20px;
-}*/
+.contacts-h{
+	width: 300px;
+	height: 85px;
+	margin: auto;
+}
+.contacts span{
+	font-weight: 400;
+
+}
 .contacts-wrap{
-	margin-top: -300px;
-	margin-left: 300px;
-	height: 200px;
-	width: 200px;
-}
-.contacts-wrap h3{
-	font-size: 40pt;
-}
-.contacts-wrap p{
-	margin: 50px -40px 0 40px;
-	line-height: 25pt;
-	font-size: 15pt;
-	direction: rtl;
-	color: #595959;
-	border-top: 1px solid black;
-	width: 200px;
-}
-.contacts-wrap span{
-	font-weight: normal;
-	color: #5b5a67;
-	text-shadow: 0 0 0;
-}
-.contacts img{
-	margin: 0 600px 0 0; 
-}
-.contacts-bg{
-	padding: 0 0 200px 20px;
-	background-image: url(img/map.png);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-	margin: 0;
+	padding: 400px 0px 0 450px;
+	display: flex;
+	justify-content: space-around;
 }
 
-/*div{
-	border: 1px white solid;
-}*/
+.contacts-wrap .map{
+	height: 450px;
+	width: 600px;
+}
+
+
+
+/*                     */
+
+
+@media screen and (max-width: 1860px){
+	.cycle-cost{
+		flex-direction: column;
+	}
+	.cost{
+		align-self: flex-end;
+	}
+}
+
+@media screen and (max-width: 1600px){
+	.logo h3{
+		font-size: 30pt;
+	}
+	.nubmer, .input-call a{
+		font-size: 20pt;
+	}
+	.input-call{
+		width: 280px;
+		height: 70px;
+		padding: 30px 0 0 120px;
+	}
+	.time{
+		font-size: 12pt;
+	}
+	main h1{
+		font-size: 110pt;
+	}
+	main h2{
+		font-size: 30pt;
+	}
+	.char-box {
+	    padding: 0 150px;
+	}
+}
+
+
+@media screen and (max-width: 1500px){
+	main h1{
+		font-size: 100pt;
+	}
+	.contacts-wrap{
+		padding: 350px 0px 0 250px;
+	}
+	.contacts-wrap .map{
+		height: 450px;
+		width: 600px;
+	}
+	.contacts-body{
+		margin-right: 50px;
+	}
+}
+
+
+@media screen and (max-width: 1410px){
+	.class h3{
+		font-size: 30pt;
+	}
+	.special h4{
+		font-size: 25pt;
+	}
+	.point img{
+		width: 60px;
+		height: 60px;
+	}
+	.special{
+		margin-top: 0px;	
+	}
+	main h1{
+		font-size: 95pt;
+	}
+}
+
+
+@media screen and (max-width: 1302px){
+	main h1{
+		font-size: 85pt;
+	}
+	.logo h3, .class h3, .cycle-h h3, .cost-h h3, .command h3, .contacts h3{
+		font-size: 25pt;
+	}
+	.brend-img img{
+		width: 465px;
+		height: 600px;
+	}
+	.class h3{
+		font-size: 25pt;
+	}
+	.special h4{
+		font-size: 22pt;
+	}
+	.point img{
+		width: 60px;
+		height: 60px;
+	}
+	.special{
+		margin-top: 50px;	
+	}
+	.brend{
+		padding-top: 100px;
+	}
+	.char-box {
+	    padding: 0 50px;
+	}
+	.nubmer, .headings-wrap a{
+		font-size: 16pt;
+	}
+	.input-call{
+		width: 200px;
+		height: 60px;
+		padding: 20px 0 0 70px;
+	}
+	.time{
+		font-size: 12pt;
+	}
+	.contacts-wrap{
+		padding: 350px 0px 0 150px;
+	}
+}
+
+
+
+@media screen and (max-width: 1150px){
+	main h1{
+		padding: 225px 0 0 20px;
+	}
+	main h2{
+		padding: 15px 0 0 25px;
+		font-size: 30pt;
+	}
+	.input-call{
+		margin-left: 200px;
+	}
+	.logo{
+		padding: 0 0 0 20px;
+	}
+	.brend-img{
+		padding: 80px 0 0 25px;
+	} 
+	.contacts-wrap{
+		padding: 50px 0px 0 50px;
+		flex-direction: column;
+	}
+	.map{
+		align-self: center;
+		padding-top: 150px;
+	}
+	.contacts p{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1050px){
+	.logo h3, .class h3, .cycle-h h3, .cost-h h3, .command h3, .contacts h3{
+		font-size: 25pt;
+	}
+	.special h4{
+		font-size: 20pt;
+		font-weight: 600;
+	}
+	.point img{
+		width: 50px;
+		height: 50px;
+	}
+	main h1{
+		font-size: 75pt;
+	}
+	main h2{
+		padding: 0px 0 0 25px;
+		font-size: 24pt;
+	}
+	.input-call{
+		margin-left: 100px;
+	}
+	.headings-wrap{
+		height: 800px;
+	}
+	.char-box {
+	    padding: 0 15px;
+	}
+	.char p{
+		font-size: 12pt;
+	}
+	.brend-img img{
+		width: 365px;
+		height: 480px;
+		padding-right: 50px;
+	}
+	.brend-img{
+		padding-top: 0
+	} 
+	.brend{
+		flex-direction: column-reverse;
+		padding: 25px;
+	}
+	.class-h{
+		padding-top: 25px;
+
+	}
+	.special{
+		padding-bottom: 0px;
+		margin-top: 50px;
+	}
+	.contacts-wrap{
+		padding: 50px 0px 0 25px;
+		flex-direction: column;
+	}
+	.map{
+		align-self: center;
+		padding-top: 150px;
+	}
+	.contacts p{
+		text-align: center;
+	}
+}
+
